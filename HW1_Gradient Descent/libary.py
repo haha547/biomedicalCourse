@@ -1,4 +1,5 @@
 import random
+from statistics import stdev
 def zero_matrix(rows,cols):
     """
         rows : number of the matrix's rows
@@ -13,6 +14,12 @@ def zero_matrix(rows,cols):
             m[-1].append(0.0)
     
     return m
+
+def ones(m):
+    b =[]
+    for i in range(m):
+        b.append(1.0)
+    return
 
 def identity_matrix(n):
     """
@@ -134,6 +141,12 @@ def matrix_mean(A):
     cols = len(A[0])
     return matrix_sum(A)/(rows*cols)
 
+def std(A):
+    rows = len(A)
+    cols = len(A[0])
+    b = []
+    for i in range(rows):
+        for j in range(cols):
+            b.append(A[i][j])
 
-
-
+    return stdev(b)
