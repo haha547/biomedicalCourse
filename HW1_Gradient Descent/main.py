@@ -12,7 +12,7 @@ m = len(Y)
 X = data[0]
 #X = np.vstack((np.ones(m), X))
 learning_rate = 0.001
-num_iter = 1000
+num_iter = 100000
 print("y.s", Y.shape)
 print("x.s", X.shape)
 a = np.ones((162,1))
